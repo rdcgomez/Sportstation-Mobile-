@@ -1,0 +1,1 @@
+include ':sportstationapp', ':app', ':base', ':instantapp'
