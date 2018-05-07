@@ -19,6 +19,6 @@ public class LoginActivity extends AppCompatActivity {
         Button forgotpasswordBtn = (Button) findViewById(R.id.forgotpasswordBtn);
         emailText1 = (EditText) findViewById(R.id.emailText1);
         passwordText2 = (EditText) findViewById(R.id.passwordText2);
-
     }
+
 }
