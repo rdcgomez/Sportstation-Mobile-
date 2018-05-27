@@ -1,7 +1,9 @@
 package com.project.apc.sportstation.sportstationapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -19,6 +21,28 @@ public class LoginActivity extends AppCompatActivity {
         Button forgotpasswordBtn = (Button) findViewById(R.id.forgotpasswordBtn);
         emailText1 = (EditText) findViewById(R.id.emailText1);
         passwordText2 = (EditText) findViewById(R.id.passwordText2);
+
+        /*
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                validate(emailText.getText().toString(), passwordText.getText().toString());
+            }
+        });
+        forgotpasswordBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                return();
+            }
+        });
+
+        private void validate (String userEmail, String userPassword){
+            if ((userEmail.equals("sample@gmail.com")) && (userPassword.equals("password"))){
+                Intent intent = new Intent(LoginSportstation.this, HomeSportstation.class);
+                startActivity(intent);
+            }
+        }
+        */
 
     }
 }
