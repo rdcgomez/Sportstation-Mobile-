@@ -19,8 +19,8 @@ public class LoginActivity extends AppCompatActivity {
 
         Button loginBtn = (Button) findViewById(R.id.loginBtn);
         Button forgotpasswordBtn = (Button) findViewById(R.id.forgotpasswordBtn);
-        emailText1 = (EditText) findViewById(R.id.emailText1);
-        passwordText2 = (EditText) findViewById(R.id.passwordText2);
+        emailText1 = (EditText) findViewById(R.id.emailText);
+        passwordText2 = (EditText) findViewById(R.id.passwordText);
 
         /*
         loginBtn.setOnClickListener(new View.OnClickListener() {
