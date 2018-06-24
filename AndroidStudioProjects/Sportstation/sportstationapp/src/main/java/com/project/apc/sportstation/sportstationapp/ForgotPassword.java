@@ -1,4 +1,7 @@
 package com.project.apc.sportstation.sportstationapp;
 
-public class ForgotPassword {
+import android.app.Activity;
+
+public class ForgotPassword extends Activity{
+
 }
