@@ -29,11 +29,11 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
         emailText1 = (EditText) findViewById(R.id.emailText);
         passwordText2 = (EditText) findViewById(R.id.passwordText);
-        
+
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View button) {
         String email = emailText1.getText().toString();
         String password = passwordText2.getText().toString();
         boolean isError = false;
@@ -48,10 +48,10 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         if (!isError) {
             login(email, password);
         }
-        if (v == findViewById(R.id.forgotpasswordBtn)) {
+        if (button == findViewById(R.id.forgotpasswordBtn)) {
 
         }
-        if (v == findViewById(R.id.signupBtn)) {
+        if (button == findViewById(R.id.signupBtn)) {
 
         }
     }
