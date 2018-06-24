@@ -1,13 +1,15 @@
 package com.project.apc.sportstation.sportstationapp;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends Activity implements View.OnClickListener {
 
     private EditText emailText1;
     private EditText passwordText2;
@@ -19,30 +21,46 @@ public class LoginActivity extends AppCompatActivity {
 
         Button loginBtn = (Button) findViewById(R.id.loginBtn);
         Button forgotpasswordBtn = (Button) findViewById(R.id.forgotpasswordBtn);
+        Button signup = (Button) findViewById(R.id.signupBtn);
+        loginBtn.setOnClickListener(this);
         emailText1 = (EditText) findViewById(R.id.emailText);
         passwordText2 = (EditText) findViewById(R.id.passwordText);
 
         /*
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                validate(emailText.getText().toString(), passwordText.getText().toString());
-            }
-        });
-        forgotpasswordBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                return();
-            }
-        });
+        switch (Button) {
+            case loginBtn:
+                setContentView(R.layout.activity_successful_login);
+                break;
 
-        private void validate (String userEmail, String userPassword){
-            if ((userEmail.equals("sample@gmail.com")) && (userPassword.equals("password"))){
-                Intent intent = new Intent(LoginSportstation.this, HomeSportstation.class);
-                startActivity(intent);
-            }
         }
         */
+    }
 
+    @Override
+    public void onClick(View v) {
+        String email = emailText1.getText().toString();
+        String password = passwordText2.getText().toString();
+        boolean isError = false;
+        if(TextUtils.isEmpty(email)) {
+            emailText1.setError(getString(R.string.required_input));
+            isError = true;
+        }
+        if (TextUtils.isEmpty(password)) {
+            passwordText2.setError(getString(R.string.required_input));
+            isError = true;
+        }
+        if (!isError) {
+            login(email, password);
+        }
+    }
+
+    private void login(String email, String password) {
+        if (email.equals("test") && password.equals("test")) {
+            Toast.makeText(getApplicationContext(), "Succesfully Login", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), activity)
+        }
+        else (email.);{
+            Toast.makeText(getApplicationContext(), "Login Failed", Toast.LENGTH_SHORT).show();
+        }
     }
 }
