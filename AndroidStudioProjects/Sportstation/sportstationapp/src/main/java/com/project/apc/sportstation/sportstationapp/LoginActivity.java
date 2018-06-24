@@ -29,15 +29,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
         emailText1 = (EditText) findViewById(R.id.emailText);
         passwordText2 = (EditText) findViewById(R.id.passwordText);
-
-        /*
-        switch (Button) {
-            case loginBtn:
-                setContentView(R.layout.activity_home);
-                break;
-
-        }
-        */
+        
     }
 
     @Override
@@ -55,6 +47,12 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         }
         if (!isError) {
             login(email, password);
+        }
+        if (v == findViewById(R.id.forgotpasswordBtn)) {
+
+        }
+        if (v == findViewById(R.id.signupBtn)) {
+
         }
     }
 
