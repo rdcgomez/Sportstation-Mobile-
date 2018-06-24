@@ -4,12 +4,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fadingEdge="none"
+    android:minHeight="250dp"
+    android:visibility="visible"
+    tools:context=".HomeActivity">>
 
     <TextView
         android:id="@+id/successText"
-        android:layout_width="218dp"
-        android:layout_height="48dp"
+        android:layout_width="221dp"
+        android:layout_height="46dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"

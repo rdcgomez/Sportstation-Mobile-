@@ -1,5 +1,5 @@
 <resources>
-    <string name="login_success">Login Success!</string>
+
     <string name="app_name">Sportstation</string>
     <string name="email_address">Email Address</string>
     <string name="password">Password</string>
@@ -8,4 +8,7 @@
     <string name="login">Login</string>
     <string name="back">Back</string>
     <string name="required_input">This field  is required!</string>
+    <string name="login_success">Login Success!</string>
+
 </resources>
+

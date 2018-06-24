@@ -22,14 +22,18 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         Button loginBtn = (Button) findViewById(R.id.loginBtn);
         Button forgotpasswordBtn = (Button) findViewById(R.id.forgotpasswordBtn);
         Button signup = (Button) findViewById(R.id.signupBtn);
+
         loginBtn.setOnClickListener(this);
+        forgotpasswordBtn.setOnClickListener(this);
+        signup.setOnClickListener(this);
+
         emailText1 = (EditText) findViewById(R.id.emailText);
         passwordText2 = (EditText) findViewById(R.id.passwordText);
 
         /*
         switch (Button) {
             case loginBtn:
-                setContentView(R.layout.activity_successful_login);
+                setContentView(R.layout.activity_home);
                 break;
 
         }
@@ -57,10 +61,11 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     private void login(String email, String password) {
         if (email.equals("test") && password.equals("test")) {
             Toast.makeText(getApplicationContext(), "Succesfully Login", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(getApplicationContext(), activity)
+            Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+            startActivity(intent);
         }
-        else (email.);{
+       /* else (email.);{
             Toast.makeText(getApplicationContext(), "Login Failed", Toast.LENGTH_SHORT).show();
-        }
+        } */
     }
 }
