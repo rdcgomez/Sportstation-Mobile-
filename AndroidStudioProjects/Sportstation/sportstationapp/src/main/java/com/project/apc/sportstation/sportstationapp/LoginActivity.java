@@ -39,26 +39,28 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         boolean isError = false;
         if(TextUtils.isEmpty(email)) {
             emailText1.setError(getString(R.string.required_input));
-           // isError = true;
+           isError = true;
         }
         if (TextUtils.isEmpty(password)) {
             passwordText2.setError(getString(R.string.required_input));
-            //isError = true;
+            isError = true;
         }
         if (!isError) {
-                login(email, password);
+            login(email, password);
         }
 
-        switch (button) {
-            case button == findViewById(R.id.signupBtn):
-            Intent intent = new Intent(getApplicationContext(), CreateAccountActivity.class);
-            startActivity(intent);
+       /* switch (button) {
+            case findViewById(R.id.signupBtn):
+            Intent createAccount = new Intent(getApplicationContext(), CreateAccountActivity.class);
+            startActivity(createAccount);
             break;
 
             case button == findViewById(R.id.forgotpasswordBtn):
-                Intent intent = new Intent()
+            Intent forgotPassword = new Intent(getApplicationContext(), ForgotPassword.class);
+            startActivity(forgotPassword);
 
         }
+        */
     }
 
 
