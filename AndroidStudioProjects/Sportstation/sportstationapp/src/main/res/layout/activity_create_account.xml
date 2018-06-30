@@ -27,7 +27,7 @@
 
 
     <Button
-        android:id="@+id/loginBtn1"
+        android:id="@+id/backBtn"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="97dp"
         android:layout_height="30dp"
@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.94" />
 
     <Button
-        android:id="@+id/loginBtn2"
+        android:id="@+id/nextBtn"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="97dp"
         android:layout_height="30dp"
@@ -107,7 +107,7 @@
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439" />
+        app:layout_constraintVertical_bias="0.421" />
 
     <TextView
         android:id="@+id/textView4"
@@ -246,8 +246,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText3"
         app:layout_constraintVertical_bias="0.113" />
-
-
-
 
 </android.support.constraint.ConstraintLayout>

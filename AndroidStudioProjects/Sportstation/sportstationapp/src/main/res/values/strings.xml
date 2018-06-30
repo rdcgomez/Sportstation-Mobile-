@@ -14,7 +14,9 @@
     <string name="little_info">             We need a little more information before you can use this app</string>
     <string name="next">                    Next</string>
     <string name="back">                    Back</string>
-    <string name="done">                    Sign Up!</string>
+    <string name="done">                    Sign Up</string>
+    <string name="phone_number">            Phone Number</string>
+    <string name="city_location">           City Location</string>
 
 </resources>
 
